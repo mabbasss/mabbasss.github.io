@@ -15,7 +15,7 @@ body {
 
 @font-face {
     font-family: "Revofit";
-    src: url("D:/Courses/The Complete Web Developer in 2018 Zero to Mastery/Projects/Bootstrap/landing page solution/Revofit.ttf");
+    src: url("Revofit.ttf");
 }
 
 hr {
@@ -30,7 +30,7 @@ hr {
 
 header.startup {
   background-position: center;
-  background-image: url("D:/Courses/The Complete Web Developer in 2018 Zero to Mastery/Projects/Bootstrap/landing page solution/mannequin.png");
+  background-image: url("Mannequin.png");
   background-size: cover;
   height: 100%;
   filter: drop-shadow(2px 4px 6px black);
