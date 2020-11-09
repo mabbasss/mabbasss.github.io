@@ -1,0 +1,334 @@
+@import url(myfonts.css);
+
+.main{
+    width: 100%;
+    min-height: 200px;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.headerbg{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header{
+    width: 100%;
+    height: 850px;
+    background-color: rgba(0, 0, 0,0.5);
+
+}
+
+
+
+.logo{
+    width: 220px;
+    margin-left: 15%;
+    float: left;
+}
+
+.pic1 h1{
+    float: right;
+    margin:6px;
+    font-family: revofit;
+    color: white;
+}
+
+.pic1{
+    margin-top: 10px;
+}
+
+.navbar{
+    float: right;
+    width: 400px;
+    height: 50px;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.navbar ul li{
+    float: left;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: revofitdouble;
+}
+
+.navbar ul li:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+.burgertext{
+    float: left;
+    clear: both;
+    margin-left: 15%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 120px;
+    width: 30%;
+    font-family: lemondropbold;
+    color: transparent;
+    line-height: 120px;
+    -webkit-text-stroke: orange;
+    -webkit-text-stroke-width: 5px;
+}
+
+.burgertext1 h2{
+    float: left;
+    clear: both;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-family: revofitdouble;
+    text-transform: capitalize;
+    color: white;
+}
+
+.burgerp{
+    margin-left: 15%;
+    text-align: justify;
+    font-size: 16px;
+    font-family: revofitdouble;
+    width: 500px;
+    overflow: hidden;
+    float: left;
+    clear: both;
+    text-transform: capitalize;
+    color: white;
+}
+
+.buttons01{
+    width: 290px;
+    float: left;
+    clear: both;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+.button01{
+    text-align: center;
+    float: left;
+    padding: 2px;
+    margin: 0;
+    color: black;
+    font-family: revofitdouble;
+    background-color: orange;
+    border-radius: 10px;
+    border: solid orange;
+    cursor: pointer;
+    transition: 0.8s;
+    width: 115px;
+}
+
+.button01:hover{
+    background-color: transparent;
+    color: orange;
+}
+.button02{
+    text-align: center;
+    float: right;
+    padding: 2px;
+    margin: 0;
+    color: orange;
+    font-family: revofitdouble;
+    border-radius: 10px;
+    border: solid orange;
+    transition: 0.8s;
+    cursor: pointer;
+    width: 140px;
+}
+
+.button02:hover{
+    background-color: orange;
+    color: black;
+}
+
+
+.sec1{
+    width: 100%;
+    height: 500px;
+    background: #e9e9e9;
+}
+
+.box1{
+    width: 25%;
+    height: 350px;
+    background-color: white;
+    float: left;
+    margin: 75px 4%;
+    border-radius: 50px;
+    transition: 0.8s;
+}
+
+.box1:hover{
+    box-shadow: 0 0 20px 5px rgb(172, 161, 161);
+}
+
+.box1 img{
+    margin-left: 43%;
+    margin-top: 20px;
+
+}
+
+.box1 h1{
+    text-align: center;
+    font-family: revofitdouble;
+}
+
+.box1 p{
+    text-align: center;
+    text-align: j;
+    width: 260px;
+    margin: auto;
+    font-family: revofitdouble;
+}
+
+.box1 h2{
+    text-align: center;
+    font-family: revofitdouble;
+    cursor: pointer;
+}
+
+.box1 h2:hover{
+    color: orange;
+}
+
+.moreinfo{
+    width: 100%;
+    height: 700px;
+    background: white;
+    overflow: hidden;
+}
+
+.moreinfo img{
+    float: right;
+    margin-right: 4%;
+}
+
+.moreinfo ul{
+    font-family: revofitdouble;
+    font-size: 35px;
+    line-height: 86px;
+    float: left;
+    margin-left: 4%;
+    margin-top: 60px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.moreinfo ul li::before{
+    content: "\2661";
+    color: orange;
+    margin-right: 20px;
+}
+
+.contactbg{
+
+    background-image: url(../images/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    background: rgba(0, 0, 0,0.5);
+    
+}
+
+.contact h1{
+    font-family: revofitdouble;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.contact h1 span{
+    color: orange;
+}
+
+.buttons{
+    width: 210px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.button1{
+    text-align: center;
+    float: left;
+    padding: 2px;
+    margin: 0;
+    color: black;
+    font-family: revofitdouble;
+    background-color: orange;
+    border-radius: 10px;
+    border: solid orange;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.button1:hover{
+    background-color: transparent;
+    color: orange;
+}
+
+.button2{
+    text-align: center;
+    float: right;
+    padding: 2px;
+    margin: 0;
+    color: orange;
+    font-family: revofitdouble;
+    border-radius: 10px;
+    border: solid orange;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.button2:hover{
+    background-color: orange;
+    color: black;
+}
+
+.ft1{
+    width: 100%;
+    height: auto;
+    background: rgba(41, 34, 34, 1);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-family: revofitdouble;
+}
+
+
+
+
+
+
+
+
+
+
