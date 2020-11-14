@@ -1,327 +1,538 @@
-@import url(myfonts.css);
+@import url(../css/myfonts.css);
 
-.main{
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    min-height: 200px;
-    margin: auto;
+    min-height: 80px;
     height: auto;
-    overflow: hidden;
-    background-color: gray;
-}
-
-.headerbg{
-    background: url(../images/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.header{
-    width: 100%;
-    height: 850px;
-    background-color: rgba(0, 0, 0,0.5);
-
-}
-
-
-
-.logo{
-    width: 220px;
-    margin-left: 15%;
-    float: left;
-}
-
-.pic1 h1{
-    float: right;
-    margin:6px;
-    font-family: revofit;
-    color: white;
-}
-
-.pic1{
-    margin-top: 10px;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(#000,#666);
+    justify-content: space-between;
+    z-index: 9999;
+    box-shadow: 0px 2px 3px rgb(255, 255, 255);
+    font-family: revofitdouble;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar{
-    float: right;
-    width: 400px;
-    height: 50px;
-    margin-right: 10%;
-    margin-top: 15px;
-}
-
-.navbar ul{
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    margin: 0;
     padding: 0;
+}
+
+.logo{
+    position: absolute;
+    left: 60px;
+    top: 10px;
+}
+
+.logo img{
+    width: 20%;
+}
+
+
+nav ul{
+    width: 650px;
     margin: 0;
-
-}
-
-.navbar ul li{
-    float: left;
-    width: 100px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    font-size: 20px;
-    font-family: revofitdouble;
-}
-
-.navbar ul li:hover{
-    color: orange;
-    cursor: pointer;
-}
-
-.burgertext{
-    float: left;
-    clear: both;
-    margin-left: 15%;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    font-size: 120px;
-    width: 30%;
-    font-family: lemondropbold;
-    color: transparent;
-    line-height: 120px;
-    -webkit-text-stroke: orange;
-    -webkit-text-stroke-width: 5px;
-}
-
-.burgertext1 h2{
-    float: left;
-    clear: both;
-    margin-left: 15%;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    font-size: 40px;
-    font-family: revofitdouble;
-    text-transform: capitalize;
-    color: white;
-}
-
-.burgerp{
-    margin-left: 15%;
-    text-align: justify;
-    font-size: 16px;
-    font-family: revofitdouble;
-    width: 500px;
-    overflow: hidden;
-    float: left;
-    clear: both;
-    text-transform: capitalize;
-    color: white;
-}
-
-.buttons01{
-    width: 290px;
-    float: left;
-    clear: both;
-    margin-left: 20%;
-    margin-top: 20px;
-}
-
-.button01{
-    text-align: center;
-    float: left;
-    padding: 2px;
-    margin: 0;
-    color: black;
-    font-family: revofitdouble;
-    background-color: orange;
-    border-radius: 10px;
-    border: solid orange;
-    cursor: pointer;
-    transition: 0.8s;
-    width: 115px;
-}
-
-.button01:hover{
-    background-color: transparent;
-    color: orange;
-}
-.button02{
-    text-align: center;
-    float: right;
-    padding: 2px;
-    margin: 0;
-    color: orange;
-    font-family: revofitdouble;
-    border-radius: 10px;
-    border: solid orange;
-    transition: 0.8s;
-    cursor: pointer;
-    width: 140px;
-}
-
-.button02:hover{
-    background-color: orange;
-    color: black;
-}
-
-
-.sec1{
-    width: 100%;
-    height: 500px;
-    background: #e9e9e9;
-}
-
-.box1{
-    width: 25%;
-    height: 350px;
-    background-color: white;
-    float: left;
-    margin: 75px 4%;
-    border-radius: 50px;
-    transition: 0.8s;
-}
-
-.box1:hover{
-    box-shadow: 0 0 20px 5px rgb(172, 161, 161);
-}
-
-.box1 img{
-    margin-left: 43%;
-    margin-top: 20px;
-
-}
-
-.box1 h1{
-    text-align: center;
-    font-family: revofitdouble;
-}
-
-.box1 p{
-    text-align: center;
-    text-align: j;
-    width: 260px;
-    margin: auto;
-    font-family: revofitdouble;
-}
-
-.box1 h2{
-    text-align: center;
-    font-family: revofitdouble;
-    cursor: pointer;
-}
-
-.box1 h2:hover{
-    color: orange;
-}
-
-.moreinfo{
-    width: 100%;
-    height: 700px;
-    background: white;
-    overflow: hidden;
-}
-
-.moreinfo img{
-    float: right;
-    margin-right: 4%;
-}
-
-.moreinfo ul{
-    font-family: revofitdouble;
-    font-size: 35px;
-    line-height: 86px;
-    float: left;
-    margin-left: 4%;
-    margin-top: 60px;
+    padding: 0;
+    position: absolute;
+    right: 0;
     list-style: none;
-    text-transform: capitalize;
+    text-align: center;
+
+
 }
 
-.moreinfo ul li::before{
-    content: "\2661";
-    color: orange;
-    margin-right: 20px;
+nav ul li{
+    width: 150px;
+    height: 75px;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-.contactbg{
 
-    background-image: url(../images/bg.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.contact{
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
+
+nav ul li a{
+    width: 150px;
+    height: 75px;
+    display: block;
     position: relative;
-    background: rgba(0, 0, 0,0.5);
-    
-}
-
-.contact h1{
-    font-family: revofitdouble;
-    text-align: center;
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-.contact h1 span{
-    color: orange;
-}
-
-.buttons{
-    width: 210px;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-.button1{
-    text-align: center;
-    float: left;
-    padding: 2px;
-    margin: 0;
-    color: black;
-    font-family: revofitdouble;
-    background-color: orange;
-    border-radius: 10px;
-    border: solid orange;
-    cursor: pointer;
+    text-decoration: none;
     transition: 0.8s;
-}
-
-.button1:hover{
-    background-color: transparent;
-    color: orange;
-}
-
-.button2{
     text-align: center;
-    float: right;
-    padding: 2px;
+    line-height: 75px;
+    font-size: 0.8em;
     margin: 0;
-    color: orange;
-    font-family: revofitdouble;
-    border-radius: 10px;
-    border: solid orange;
-    transition: 0.8s;
-    cursor: pointer;
+    padding: 0;
 }
 
-.button2:hover{
-    background-color: orange;
-    color: black;
+nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.8)
+
 }
 
-.ft1{
+.l2{
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(#000,#666);
+    margin: 0;
+    padding: 0;
+
+}
+ 
+#submenu {
+    width: 150px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    position: absolute;
+    right: 172.5px;
+}
+#dropdown:hover #submenu {
+    height: 300px;
+}
+
+main{
     width: 100%;
     height: auto;
-    background: rgba(41, 34, 34, 1);
-    overflow: hidden;
-    text-align: center;
-    color: white;
-    font-family: revofitdouble;
+    position: relative;
 }
+
+.search{
+    position: fixed;
+    top: 150px;
+    left: -155px;
+    width: 200px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    padding: 5px;
+    border-radius: 0 30px 30px  0;
+    transition: all 0.5s
+}
+
+.search:hover{
+    left: 0;
+}
+
+.search input{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    top: 12.5px;
+    left: 2px;
+    border-radius: 20px;
+}
+
+.search img{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 5px;
+    top: 9px;
+    margin: 5px;
+}
+
+
+
+.mainbg{
+    width: 100%;
+    height: 700px;
+    background-color: #fddd00;
+}
+
+.bgshadow{
+    filter: drop-shadow(-2px 20px 5px rgba(50, 50, 0, 0.5))
+}
+
+.bg{
+    width: 90%;
+    height: 700px;
+    margin: auto;
+    clip-path: circle(60% at 50% 0%);
+
+}
+
+.bg video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    bottom: 80px;
+}
+
+.sports{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 200px;
+    position: relative;
+    bottom: 120px;
+    margin: auto;
+}
+
+.text1{
+    width: 100%;
+    height: 100%;
+    background: rgba(253,221,0,.7);
+    border-radius: 20px;
+    font-family: revofitdouble;
+    font-size: 1.5em;
+    overflow: hidden;
+    line-height: 90px;
+    clip-path: circle(0% at 0 0);
+    color: #000;
+    transition: all 0.7s;
+}
+
+.text1 a{
+    text-decoration: none;
+    color: #000;
+}
+
+.c1{
+    width: 20%;
+    height: 200px;
+    background: #fff url(../images/swimmingacademy.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px #fddd00;
+    border-radius: 20px;
+    margin: 2%;
+    box-shadow: 0 0 15px 2px;
+}
+
+.c1:hover .text1{
+    clip-path: circle(60% at 0 0);
+}
+
+
+.c2{
+    width: 20%;
+    height: 200px;
+    background: #fff url(../images/tennisacademy.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px #fddd00;
+    border-radius: 20px;
+    margin: 2%;
+    box-shadow: 0 0 15px 2px;
+}
+
+.c2:hover .text1{
+    clip-path: circle(60% at 0 0);
+}
+
+.c3{
+    width: 20%;
+    height: 200px;
+    background: #fff url(../images/footballacademy.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px #fddd00;
+    border-radius: 20px;
+    margin: 2%;
+    box-shadow: 0 0 15px 2px;
+}
+
+.c3:hover .text1{
+    clip-path: circle(60% at 0 0);
+}
+
+.c4{
+    width: 20%;
+    height: 200px;
+    background: #fff url(../images/squashacademy.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px #fddd00;
+    border-radius: 20px;
+    margin: 2%;
+    box-shadow: 0 0 15px 2px;
+}
+
+.c4:hover .text1{
+    clip-path: circle(60% at 0 0);
+}
+
+h1{
+    text-align: center;
+    color: #434c9c;
+    font-family: revofitdouble;
+    font-size: 2em;
+    padding: 20px;
+}
+
+hr{
+    width: 30%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.about{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    min-height: 350px;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+
+.leftside{
+    width: 45%;
+    height: 350px;
+}
+
+.leftside h3{
+    position: absolute;
+    font-family: revofitdouble;
+    color: #434c9c;
+    font-size: 1.3em;
+    left: 0;
+}
+
+
+
+.leftside p{
+    position: absolute;
+    width: 45%;
+    top: 70px;
+    font-family: revofit;
+    color: #434c9c;
+    overflow: hidden;
+    margin-left: 20px;
+    text-transform: capitalize;
+
+}
+
+.rightside{
+    width: 45%;
+    height: 200px;
+    background: url(../images/about.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    background-position: center;
+    filter: drop-shadow(-16px 16px 10px rgba(0, 0, 0, 0.59));
+}
+
+.path{
+    width: 100%;
+    height: 200px;
+    background: rgba(255,255,255,.2);
+    clip-path: circle(0% at 50% 50%);
+    transition: all 0.5s;
+}
+
+.rightside:hover .path{
+    clip-path: circle(100% at 50% 50%);
+}
+
+
+.schedule{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    min-height: 350px;
+    height: auto;
+    margin: auto;
+}
+
+.schedule table tr:nth-child(even){
+    background: rgba(0,0,0,.2);
+}
+
+table{
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    font-family: revofitdouble;
+    font-size: 1em;
+}
+
+.schedule table tr{
+    padding: 15px;
+}
+
+.schedule table td{
+    border-style: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    width: 80%;
+    min-height: 400px;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 25px;
+
+}
+
+.news figure{
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    margin:1%;
+    border:1px solid #fddd00;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.583);
+    border-radius: 20px;
+}
+
+.news figure img{
+    width: 95%;
+    padding:7px;
+    border-radius: 20px;
+}
+
+.news figure figcaption{
+    padding: 5px;
+}
+
+.news figure figcaption h3{
+    font-family: revofitdouble;
+    margin-bottom: 20px;
+    color: #434c9c;
+
+}
+
+
+
+.news figure figcaption p{
+    font-family: revofit;
+    margin-bottom: 20px;
+
+}
+
+
+
+.vid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    min-height: 310px;
+    height: auto;
+    background-color: #fddd00;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+
+.left{
+    position: absolute;
+    left: 0;
+    width: 49%;
+    height: 100%;
+    background: url(../images/n2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    width: 48%;
+    height: 100%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+}
+
+footer p{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    background: linear-gradient(#000,#666);
+    font-family: revofit;
+    color: #fff;
+    font-size: 0.7em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
