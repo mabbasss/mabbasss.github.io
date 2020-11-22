@@ -3,159 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">  
-    <title>Wadi Degla Club</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </head>
 <body>
-
-    <!-- -----------nav--------- -->
-
-    <nav>
-        <div class="logo"><img src="images/logo.png"></div>
-        <div class="navbar">
-            <ul class="mainul">
-                <li><a href="">Home</a></li>
-                <li><a href="#abtid">About us</a></li>
-                <li id="dropdown"><a href="">Academy</a>
-                    <ul id="submenu">
-                        <li class="l2"><a href="#">Plan 1</a></li>
-                        <li class="l2"><a href="#">Plan 2</a></li>
-                        <li class="l2"><a href="#">Plan 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="">Contacts</a></li>
-            </Ul>
+    <header class="hd container-fluid d-flex">
+        <nav class="navbar col-12 col-md-5 navbar-expand-lg navbar-dark mx-auto fixed-top" style="background-color: rgb(45, 168, 140);">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto text-center justify-content-around">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#abt">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#portf">Portofolio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#joinn"><button class="btn btn-outline-danger ml-2 my-auto my-sm-0" type="submit">Join us</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="btmbar col-12 col-md-9 mx-auto d-inline-flex justify-content-between p-0" style="background-color: rgba(45, 168, 140,0.5);">
+            <div class="icns col-2"></div>
+            <div class="icns col-2"></div>
+            <div class="icns col-2"></div>
+            <div class="icns col-2"></div>
+            <div class="icns col-2"></div>
         </div>
-    </nav>
-
-    <!-- --------------main--------------- -->
-
-    <main>
-        <div class="search">
-            <input class="searchbox" type="search">
-            <a href="" id="srch"><img src="images/iconfinder_search_326690.png"></a>
-        </div>
-        <div class="mainbg">
-            <div class="bgshadow">
-                <div class="bg">
-                    <video loop muted autoplay>
-                        <source src="media/vid1edit.mp4">
-                    </video>
+    </header>
+    <main class="all container-fluid col-12">
+        <section class="features row d-flex col-12 mx-auto">
+            <div class="feats col-12 col-md-3 text-center">
+                <img src="images/icons.png"><br><br>
+                <h5>RIGHT STRATEGY</h5><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quam temporibus expedita nihil nisi ex velit?</p>
+            </div>
+            <div class="feats col-12 col-md-3 text-center">
+                <img src="images/02.png"><br><br>
+                <h5>ADAPTIVE STYLE</h5><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quam temporibus expedita nihil nisi ex velit?</p>
+            </div>
+            <div class="feats col-12 col-md-3 text-center">
+                <img src="images/03.png"><br><br>
+                <h5>MONEY MAKING</h5><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quam temporibus expedita nihil nisi ex velit?</p>
+            </div>
+            <div class="feats col-12 col-md-3 text-center">
+                <img src="images/04.png"><br><br>
+                <h5>BRAND KEEPING</h5><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quam temporibus expedita nihil nisi ex velit?</p>
+            </div>
+            <h6 id="abt" class="display-4 font-italic font-weight-light">&nbsp;About &nbsp;<span class="">Ruddy&nbsp;.</span></h6>
+        </section>
+        <section class="aboutruddy row d-flex col-12 mx-auto">
+            <div class="abtd col-12 col-md-4 text-center p-4" style="background-color: rgb(45, 168, 140);">
+                <h5>THIS IS A POINT ABOUT THE COMPANY</h5><hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum, eveniet facere consequatur optio, officia aut sunt non ea, quo quos! Dolorem deserunt porro omnis iste molestias voluptatibus illum animi cupiditate nam aliquam qui placeat quos eos excepturi saepe sed tempore explicabo, alias veniam totam perferendis sapiente nobis? Voluptas exercitationem deserunt, placeat amet delectus nisi?</p>
+            </div>
+            <div class="abtd col-12 col-md-4 text-center p-0">
+                <img src="images/about-pic2.jpg">
+            </div>
+            <div class="abtd col-12 col-md-4 text-center p-4" style="background-color: rgb(45, 168, 140);">
+                <h5>THIS IS A POINT ABOUT THE COMPANY</h5><hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum, eveniet facere consequatur optio, officia aut sunt non ea, quo quos! Dolorem deserunt porro omnis iste molestias voluptatibus illum animi cupiditate nam aliquam qui placeat quos eos excepturi saepe sed tempore explicabo, alias veniam totam perferendis sapiente nobis? Voluptas exercitationem deserunt, placeat amet delectus nisi?</p>
+            </div>
+            <div class="abtd col-12 col-md-4 text-center p-0">
+                <img src="images/about-pic1.jpg">
+            </div>
+            <div class="abtd col-12 col-md-4 text-center p-4" style="background-color: rgb(254, 97, 56);">
+                <h5>THIS IS A POINT ABOUT THE COMPANY</h5><hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum, eveniet facere consequatur optio, officia aut sunt non ea, quo quos! Dolorem deserunt porro omnis iste molestias voluptatibus illum animi cupiditate nam aliquam qui placeat quos eos excepturi saepe sed tempore explicabo, alias veniam totam perferendis sapiente nobis? Voluptas exercitationem deserunt, placeat amet delectus nisi?</p>
+            </div>
+            <div class="abtd col-12 col-md-4 text-center p-0">
+                <img src="images/about-pic3.jpg">
+            </div>
+        </section>
+        <section class="process">
+            <h6 id="" class="display-4 font-italic font-weight-light">&nbsp;OUR &nbsp;<span class="">PROCESS&nbsp;.</span></h6>
+            <div class="prcssdivs row d-flex justify-content-around col-12 mx-auto p-4">
+                <div class="prcss1 col-10 col-md-3 text-center ">
+                    <img src="images/conversation.png">
+                    <h4>MEETING</h4>
+                </div>
+                <div class="prcss2 col-10 col-md-3 text-center ">
+                    <img src="images/analysis.png">
+                    <h4>ANALYSIS</h4>
+                </div>
+                <div class="prcss3 col-10 col-md-3 text-center">
+                    <img src="images/making.png">
+                    <h4>MAKING</h4>
+                </div>
+                <div class="prcss4 col-10 col-md-3 text-center">
+                    <img src="images/success.png">
+                    <h4>SUCCESS</h4>
+                </div>
+            </div>
+        </section>
+        <section class="cardscont container-fluid mb-4">
+            <div class="blogtitle py-3"><h6 id="blog" class="display-4 font-italic font-weight-light">&nbsp;OUR &nbsp;<span class="">BLOG&nbsp;.</span></h6></div>
+            <div class="row mx-auto">
+                <div class="leftside col-12 col-md-8">
+                    <div class="row mx-auto">
+                        <div class="d1 col-12 col-md-6">
+                            <div class="card" style="width: 100%;">
+                                <img src="images/b1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="d2 col-12 col-md-6">
+                            <div class="card" style="width: 100%;">
+                                <img src="images/b2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="d3 col-12 col-md-12">
+                            <div class="card mb-3 mt-3" style="max-width: 100%;">
+                                <div class="row no-gutters">
+                                  <div class="col-md-5">
+                                    <img src="images/b4.jpg" class="card-img" alt="...">
+                                  </div>
+                                  <div class="col-md-7">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightside col-12 col-md-4 p-0 mx-auto">
+                    <div class="d4 col-md-12 mx-auto">
+                        <div class="card" style="width: 100%;">
+                            <img src="images/b3.jpg" height="515px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portf" class="portfolio container-fluid col-12">
+            <div class="blogtitle py-3"><h6 id="blog" class="display-4 font-italic font-weight-light">PORTFOLIO</h6></div>
+            <div class="portbtns col-6 text-center justify-content-around d-flex mx-auto mb-5">
+                <button type="button" class="btn btn-outline-danger px-3">ALL</button>
+                <button type="button" class="btn btn-outline-warning">BUSINESS</button>
+                <button type="button" class="btn btn-outline-success">BUILDING</button>
+                <button type="button" class="btn btn-outline-info">MEDICINE</button>
+                <button type="button" class="btn btn-outline-secondary">ENTERTAINMENT</button>
+            </div>
+            <div class="portpics row col-12 text-center">
+                <div class=" col-12 col-md-4">
+                    <img src="images/portpic1.jpg">
+                </div>
+                <div class=" col-12 col-md-4">
+                    <img src="images/portpic2.jpg">
+                </div>
+                <div class=" col-12 col-md-4">
+                    <img src="images/portpic3.jpg">
+                </div>
+                <div class=" col-12 col-md-4">
+                    <img src="images/portpic4.jpg">
+                </div>
+                <div class=" col-12 col-md-4">
+                    <img src="images/portpic5.jpg">
+                </div>
+                <div class=" col-12 col-md-4">
+                    <img src="images/portpic6.jpg">
+                </div>
+                <div class=" col-12 col-md-4">
+                    <img src="images/portpic7.jpg">
+                </div>
+                <div class=" col-12 col-md-4">
+                    <img src="images/portpic8.jpg">
+                </div>
+                <div class=" col-12 col-md-4">
+                    <img src="images/portpic9.jpg">
+                </div>
+            </div>
+        </section>
+        <section id="joinn" class="join container-fluid col-12 d-flex align-items-center">
+            <div class="joindiv col-12 p-0 text-center">
+                <h4 class="display-4" style="color: white;">YOU ALSO WANT TO WORK WITH US ?!</h4><br>
+                <p style="color: white;">Send us the application form for a free call and our supervisor will be in contact with you</p><br>
+                <button type="button" class="btn btn-outline-light mb-4">CONTACT US</button>
+            </div>
+        </section>
+        <div class="team container-fluid col-12">
+            <div class="teamtitle py-4"><h6 id="" class="display-4 font-italic font-weight-light">&nbsp;OUR AMAZING&nbsp;<span class="">TEAM&nbsp;.</span></h6></div>
+            <div class="teamslider justify-content-center d-flex my-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/team-member1.png" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/team-member2.png" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/team-member3.png" class="d-block" alt="...">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
-
-        <!-- --------BOXES----- -->
-
-        <div class="sports">
-            <div class="c1">
-                <div class="text1"><a href="">Join Now</a></div>
+        <div class="mapdiv container-fluid col-12 mx-auto p-0">
+            <div class="map d-flex text-center justify-content-center col-12 p-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13644.725019798832!2d29.958723669775384!3d31.243405300000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5c39f3ff3e7%3A0x934bfb74b257a4c6!2sMannequin!5e0!3m2!1sen!2seg!4v1606075895002!5m2!1sen!2seg" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><div class="contactz col-4 text-center py-4">
+                    <h3 class="mpdivh" style="color: white;"><span class="mpdiv" style="font-weight: bold; font-style: normal;">Ruddy</span> Marketing Agency</h3><br><br>
+                    <div class="pin ">
+                        <p class="address"><img class="mapsicons" src="images/map.png"> 119 Salisbury NC 2760</p>
+                    </div>
+                    <div class="pin ">
+                        <p class="address"><img class="mapsicons" src="images/mail.png"> info@ruddy.com</p>
+                    </div>
+                    <div class="pin ">
+                        <p class="address"><img class="mapsicons" src="images/mobile.png"> +2 222 333 444 5555</p>
+                    </div>
+                </div>
             </div>
-            <div class="c2">
-                <div class="text1"><a href="">Join Now</a></div>
-            </div>
-            <div class="c3">
-                <div class="text1"><a href="">Join Now</a></div>
-            </div>
-            <div class="c4">
-                <div class="text1"><a href="">Join Now</a></div>
-            </div>
+            
         </div>
-
-        <!-- About us -->
-
-        <h1  id="abtid">About Us</h1><hr>
-        <section class="about">
-            <div class="leftside">
-                <h3>We Achieve<br>your fitness goals</h3><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias ex blanditiis? Error, odio maxime velit voluptatum, accusamus eum ipsa architecto illum, exercitationem aliquid quibusdam numquam! Excepturi quia unde asperiores sit, beatae tempore corrupti aperiam quod aut reprehenderit voluptatibus architecto amet recusandae modi autem error quidem? Accusamus obcaecati libero rerum dolores voluptates qui similique fuga architecto neque fugiat, porro, nam, officiis est nulla non reiciendis quae labore at sed quas illo doloremque numquam nihil. Cupiditate eveniet quae assumenda explicabo, consectetur deleniti maiores in alias repudiandae dolore minus dolorum consequatur fugiat harum atque voluptates animi ex? In, doloremque ipsa. Ducimus, nostrum.</p>
+        <footer class="last container-fluid col-12 d-flex justify-content-center align-items-center text-center col-12 bg-dark">
+            <div class="ftim col-12 mr-4">
+            <img class="ftimg" src="images/footer-logo.png">
             </div>
-            <div class="rightside">
-                <div class="path"></div>
+            <div class="ftbtn col-12 ml-4 mt-1">
+            <button type="button" class="btn btn-outline-light">CONTACT US</button>
             </div>
-        </section>
-
-        <!-- -------SCHEDULE-------- -->
-
-        <h1>Our Schedule</h1><hr>
-        <div class="schedule">
-            <table border="1">
-                <tbody>
-                    <tr>
-                        <td>Monday -----------------</td>
-                        <td>9:30 am - 3:30 pm</td>
-                    </tr>
-                    <tr>
-                        <td>Tuesday ----------------</td>
-                        <td>9:30 am - 3:30 pm</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday -------------</td>
-                        <td>9:30 am - 3:30 pm</td>
-                    </tr>
-                    <tr>
-                        <td>Thursday ---------------</td>
-                        <td>9:30 am - 3:30 pm</td>
-                    </tr>
-                    <tr>
-                        <td>Friday ------------------</td>
-                        <td>9:30 am - 3:30 pm</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday ---------------</td>
-                        <td>9:30 am - 3:30 pm</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- -------NEWS-------- -->
-
-        <h1>Latest News</h1><hr>
-        <section class="news">
-            <figure>
-                <img src="images/n1.jpg">
-                <figcaption>
-                    <h3>News Title</h3>
-                    <p>Duis turpis arcu, dictum eu tincidunt id, congue vel urna. Quisque posuere, ipsum eu faucibus cursus, ex tortor elementum leo, eget varius lorem quam a nisl. Mauris ut enim sed tortor auctor luctus at vitae est</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/n1.jpg">
-                <figcaption>
-                    <h3>News Title</h3>
-                    <p>Duis turpis arcu, dictum eu tincidunt id, congue vel urna. Quisque posuere, ipsum eu faucibus cursus, ex tortor elementum leo, eget varius lorem quam a nisl. Mauris ut enim sed tortor auctor luctus at vitae est</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/n1.jpg">
-                <figcaption>
-                    <h3>News Title</h3>
-                    <p>Duis turpis arcu, dictum eu tincidunt id, congue vel urna. Quisque posuere, ipsum eu faucibus cursus, ex tortor elementum leo, eget varius lorem quam a nisl. Mauris ut enim sed tortor auctor luctus at vitae est</p>
-                </figcaption>
-            </figure>
-        </section>
-
-        <!-- ---------VID----------- -->
-
-
-        <section class="vid">
-            <div class="left"></div>
-            <div class="right">
-                <iframe width="100%" height="289" src="https://www.youtube.com/embed/5TYcGjlY3NM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-
-        <!-- --------MAP(FOOTER)----- -->
-
-        <footer>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d877658.7257293551!2d30.109639842764178!3d30.764631336810698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3b0e2403239%3A0xe560ff2984cf775f!2sWadi%20Degla%20Club%20Alexandria!5e0!3m2!1sen!2seg!4v1605313024595!5m2!1sen!2seg" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <p>Copyrights &#169; Wadi Degla Club, All Rights Reserved. | By M.Abbas</p>
         </footer>
     </main>
+    
+    
+    
+    <!-- <div class="div1 col-xl-6 col-lg-3 col-md-4 col-sm-2 col-1"></div>
+    <div class="div2 col-md-6"></div>
+    <div class="div3 col-sm-2"></div>
+    <div class="div4 col-1"></div> -->
 </body>
 </html>

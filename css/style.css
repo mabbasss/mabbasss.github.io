@@ -1,0 +1,224 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 825px;
+    /* background-attachment: fixed; */
+}
+
+.btmbar{
+    height: 100px;
+    align-self: flex-end;
+    background:url(../images/top-icons.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+   
+}
+
+/* .btmbar a{
+    background: rgba(0, 0, 0,0.5);
+    width: 20%;
+} */
+
+.icns{
+    transition: all 0.5s;
+}
+
+.icns:hover{
+    background: rgb(254, 97, 56,0.5);
+    cursor:pointer;
+}
+
+a:hover{
+    color:rgb(254, 97, 56) !important;
+}
+
+.feats h5{
+    color: rgb(254, 97, 56);
+}
+
+.feats p{
+    width: 90%;
+    margin: auto;
+}
+
+.feats hr{
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: gray;
+}
+
+.feats{
+    margin-top:80px;
+    margin-bottom: 130px;
+}
+
+h6{
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+span{
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.aboutruddy h5{
+    text-align:left 
+    ;
+}
+
+.aboutruddy p{
+    text-align: left;
+}
+
+.abtd img{
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.abtd h5{
+    width: 90%;
+    margin-top: 20px;
+    color:white;
+}
+
+.abtd p{
+    color: white;
+}
+
+.abtd hr{
+    background-color: white;
+}
+
+.process{
+    background: url(../images/process-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    height: auto;
+}
+
+.process h6{
+    padding-top: 50px;
+}
+
+.prcss1{
+    background: url(../images/p-bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 400px
+}
+
+.prcss1 img{
+    padding: 120px;
+}
+
+.prcss2{
+    background: url(../images/p-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+}
+.prcss2 img{
+    padding: 120px;
+}
+
+.prcss3{
+    background: url(../images/p-bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 400px
+}
+.prcss3 img{
+    padding: 120px;
+}
+
+.prcss4{
+    background: url(../images/p-bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 400px
+}
+.prcss4 img{
+    padding: 120px;
+}
+
+.d1{
+    min-height: 300px;
+}
+
+.d2{
+    min-height: 300px;
+}
+
+.d3{
+    min-height: 200px;
+}
+
+.d4{
+    height: auto;
+}
+
+.d4 .card-body{
+    min-height: auto;
+}
+
+.join{
+    background:rgb(254, 97, 56);
+    min-height: 300px;
+}
+
+.team{
+    min-height: 500px;
+}
+
+.mapdiv{
+    min-height: 200px;
+}
+
+.contactz{
+    min-height: 300px;
+    background:rgb(254, 97, 56);
+    position: absolute;
+}
+
+iframe{
+    position: relative;
+}
+
+.address{
+    color:white;
+    font-size: 1.2rem;
+}
+
+.mapdiv{
+    overflow: hidden;
+}
+
+footer{
+    height: 150px;
+}
