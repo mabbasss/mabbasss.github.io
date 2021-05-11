@@ -1,0 +1,571 @@
+@import url(myfonts.css);
+
+main{
+    width: 100%;
+    min-height: 500px;
+    margin: auto;
+    clear: both;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.header{
+    width: 100%;
+    height: auto;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.navbar ul{
+    list-style: none;
+    display: inline;
+    padding: 0;
+}
+
+.navbar ul li{
+    font-size: 18px;
+    line-height: 22.59px;
+    font-family: Mulish;
+    font-weight: 200;
+    float: left;
+    text-align: center;
+    color: #1F1534;
+    margin-right: 20px;
+    
+
+}
+
+.navbar ul li:hover{
+    color: black;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.introtext{
+    font-family: Mulish;
+    font-weight: 400;
+    /* position: relative; */
+    width: 350px;
+}
+
+.introp{
+    font-family: Mulish;
+    font-weight: 200;
+}
+
+.buttons00{
+    width: 180px;
+    margin-top: 20px;
+}
+
+.button01{
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-family: Mulish;
+    font-weight: 400;
+    background-color: #458FF6;
+    border-radius: 40px;
+    border: solid #458FF6;
+    cursor: pointer;
+    transition: 0.8s;
+    width: 150px;
+}
+
+.button01:hover{
+    background-color: transparent;
+    color: grey;
+}
+
+.w1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.sec1title{
+    font-family: Mulish;
+    font-weight: 400;
+    width: 825px;
+    margin-top: 70px;
+}
+
+.sec1titlehr{
+    width: 35px;
+    height: 2px;
+    background-color: #000000;
+    border: 0;
+    border-radius: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sec5titlehr{
+    width: 35px;
+    height: 2px;
+    background-color: #000000;
+    border: 0;
+    border-radius: 2px;
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+
+
+
+.sec1titlep{
+    margin-bottom: 50px;
+}
+.sec2hr{
+    width: 35px;
+    height: 2px;
+    background-color: #000000;
+    border: 0;
+    border-radius: 2px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+
+.sec3hr{
+    width: 35px;
+    height: 2px;
+    background-color: #000000;
+    border: 0;
+    border-radius: 2px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+
+.sec2p{
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.sec3p{
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.sec1titlep{
+    font-family: Mulish;
+    font-weight: 200;
+    text-align: center;
+}
+
+.button002{
+    width: 180px;
+    margin-top: 20px;
+}
+
+
+.button02{
+    text-align: center;
+    margin: 0;
+    color: #458FF6;
+    font-family: Mulish;
+    font-weight: 400;
+    border-radius: 40px;
+    border: solid #458FF6;
+    transition: 0.8s;
+    cursor: pointer;
+    width: 150px;
+}
+
+.button02:hover{
+    background-color: #458FF6;
+    color: white;
+}
+.button003{
+    width: 180px;
+    margin-top: 20px;
+}
+
+
+.button03{
+    text-align: center;
+    margin: auto;
+    color: #458FF6;
+    font-family: Mulish;
+    font-weight: 400;
+    border-radius: 40px;
+    border: solid #458FF6;
+    transition: 0.8s;
+    cursor: pointer;
+    width: 150px;
+}
+
+.button03:hover{
+    background-color: #458FF6;
+    color: white;
+}
+.btndownload:hover{
+    background-color: #458FF6;
+    color: white;
+}
+.btndownload{
+    text-align: center;
+    margin: 0;
+    color: #458FF6;
+    font-family: Mulish;
+    font-weight: 400;
+    border-radius: 40px;
+    border: solid #458FF6;
+    transition: 0.8s;
+    cursor: pointer;
+    width: 150px;
+}
+.btndownload p:after{
+    content: url(../images/Vector.png);
+    margin-left: 10px;
+}
+
+
+.sec1{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(../images/Frame\ \(3\).png);
+    background-repeat: no-repeat;
+    background-position:left;
+}
+
+.boxes{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.box1{
+    width: 320px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.8s;
+    box-shadow: 3px 6px #e1e1e1;
+    margin: 10px;    
+}
+
+.box1:hover{
+    box-shadow: 0 0 20px 5px rgb(172, 161, 161);
+}
+
+.box1 img{
+
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+.box1 h1{
+    text-align: left;
+    font-family: Mulish;
+    margin-left: 20px;
+}
+
+.box1 p{
+    text-align: left;
+    width: 260px;
+    font-family: Mulish;
+    font-weight: 200;
+    margin-left: 20px;
+}
+
+.sec2{
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.sec3{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sec5{
+    width: 100%;
+    min-height: 1000px;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    margin-top: 250px;
+    font-family: Mulish;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+
+.card1{
+    width: 26.2%;
+    height: 512px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-weight: 200;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.cardcontent{
+    padding: 2px 16px;
+    margin: auto;
+}
+
+.card1 img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.cardcontent a{
+    text-decoration: none;
+    color: #4089ED;
+    font-weight: 400;
+}
+
+.cardcontent a::after{
+    content: url(../images/Vector1.png);
+    margin: 10px;
+}
+
+
+.sec2text{
+    font-family: Mulish;
+    font-weight: 400;
+    /* position: relative; */
+    width: 350px;
+}
+
+.sec3text{
+    font-family: Mulish;
+    font-weight: 400;
+    /* position: relative; */
+    width: 350px;
+}
+.sec4{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    margin-top: 250px;
+    font-family: Mulish;
+    color: white;
+}
+
+.carousel{
+    width: 60%;
+    height: 380px;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    margin: auto;
+    padding: 20px;
+}
+
+.carousel h1{
+    text-align: center;
+    padding-top:30px ;
+    font-weight: 400;
+}
+
+.carouselcontent{
+    display: flex;
+    justify-content: space-around;
+    /* align-items:center;
+    align-content: center; */
+}
+
+.profile{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sec4p{
+    width: 350px;
+    line-height: 30px;
+    font-weight: 200;
+}
+
+.sec4hr{
+    width: 35px;
+    height: 2px;
+    background-color: White;
+    border: 0;
+    border-radius: 2px;
+    margin-bottom: 60px;
+}
+
+.moreinfo{
+    width: 100%;
+    height: 700px;
+    background: white;
+    overflow: hidden;
+}
+
+.moreinfo img{
+    float: right;
+    margin-right: 4%;
+}
+
+.moreinfo ul{
+    font-family: revofitdouble;
+    font-size: 35px;
+    line-height: 86px;
+    float: left;
+    margin-left: 4%;
+    margin-top: 60px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.moreinfo ul li::before{
+    content: "\2661";
+    color: orange;
+    margin-right: 20px;
+}
+
+.contactbg{
+
+    background-image: url(../images/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    background: rgba(0, 0, 0,0.5);
+    
+}
+
+.contact h1{
+    font-family: revofitdouble;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.contact h1 span{
+    color: orange;
+}
+
+.buttons{
+    width: 210px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.button1{
+    text-align: center;
+    float: left;
+    padding: 2px;
+    margin: 0;
+    color: black;
+    font-family: revofitdouble;
+    background-color: orange;
+    border-radius: 10px;
+    border: solid orange;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.button1:hover{
+    background-color: transparent;
+    color: orange;
+}
+
+.button2{
+    text-align: center;
+    float: right;
+    padding: 2px;
+    margin: 0;
+    color: orange;
+    font-family: revofitdouble;
+    border-radius: 10px;
+    border: solid orange;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.button2:hover{
+    background-color: orange;
+    color: black;
+}
+
+.ft1{
+    width: 100%;
+    height: auto;
+    background: rgba(41, 34, 34, 1);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-family: revofitdouble;
+}
+
+footer{
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+    font-family: Mulish;
+    font-weight: 400;
+    color: white;
+}
+
+.footerrow{
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 432px;
+    margin-left: 45px;
+    margin-top: 120px;
+}
+
+.footerrow a{
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+}

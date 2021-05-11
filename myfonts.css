@@ -1,0 +1,23 @@
+@font-face{
+    font-family: Mulish;
+    src: url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+}
+@font-face {
+    font-family: Mulishregular;
+    src: url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+}
+@font-face{
+    font-family: lemondropbold;
+    src: url(../webfonts/lemondropbold.ttf);
+}
+@font-face{
+    font-family: larkesans;
+    src: url(../webfonts/larkesansbold.ttf);
+}
+@font-face{
+    font-family: purebold;
+    src: url(../webfonts/purebolddurango.ttf);
+}
+
+
+
