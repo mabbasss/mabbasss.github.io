@@ -346,8 +346,8 @@ function loadItems(){
                 let productNumbers = localStorage.getItem('cartNumber');
                 productNumbers = parseInt(productNumbers);
                 if(productNumbers){
-                    localStorage.setItem('cartNumber',productNumbers + 1);
-                    document.getElementById('lblCartCount').innerText = productNumbers + 1;
+                    localStorage.setItem('cartNumber',productNumbers);
+                    document.getElementById('lblCartCount').innerText = productNumbers;
             
                 } else {
                     document.getElementById('lblCartCount').innerText = productNumbers;
