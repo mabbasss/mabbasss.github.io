@@ -132,6 +132,7 @@ main{
   font-size: 18px;
   border-radius: 25px;
   margin-bottom: 20px;
+  transition: 0.3s;
 }
 
 .card button:hover {

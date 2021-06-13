@@ -4,16 +4,14 @@ const productsApi ="https://afternoon-falls-30227.herokuapp.com/api/v1/products/
 showHome();
 
 function showHome(){
-    const xhr = new XMLHttpRequest();
-
+const xhr = new XMLHttpRequest();
 xhr.open("GET",productsApi);
-
 xhr.send();
 xhr.onload = function(){
 
 
     const products = JSON.parse(xhr.response).data;
-        console.log(products);
+    console.log(products);
     const productsList = document.getElementById("productsList");
 
         products.forEach(product => {
@@ -49,8 +47,6 @@ xhr.onload = function(){
         addBtn.addEventListener('click',function(){
             cartNumbers();
             addProduct();
-
-
         })
 
         function addProduct(){
@@ -69,6 +65,8 @@ xhr.onload = function(){
             }
 
         }
+
+        
 
         function cartNumbers(){
             let productNumbers = localStorage.getItem('cartNumber');
@@ -106,8 +104,7 @@ xhr.onload = function(){
                                     <div class="small mb-1">${id.ProductId}</div>
                                     <h1 class="display-5 fw-bolder">${id.Name}</h1>
                                     <div class="fs-5 mb-5">
-                                        <span class="text-decoration-line-through">$ ${id.Price}</span>
-                                        <span>$40.00</span>
+                                        <span>$ ${id.Price}</span>
                                     </div>
                                     <p class="lead">${id.Description}</p>
                                     <div class="d-flex">
@@ -146,15 +143,17 @@ xhr.onload = function(){
                     function addProduct(){
 
                         let productId = localStorage.getItem(product.ProductId);
-                        console.log(productId);
             
                         if(productId){
                             const productItem = JSON.parse(localStorage.getItem(product.ProductId));
+                            console.log(productId);
                             productItem.inCart++;
                             localStorage.setItem(product.ProductId,JSON.stringify(productItem));
                         } else {
                             product.inCart=1;
                             localStorage.setItem(product.ProductId,JSON.stringify(product));
+                            console.log(productId);
+
                             // document.getElementById().innerText = 1;
                         }
             
@@ -182,7 +181,24 @@ xhr.onload = function(){
 
 
 
+const itemBody = document.getElementById('itemBody');
+const cartTotal  = document.getElementById('cartPrice');
 
+
+
+function allStorage(){
+
+    var values = [],
+        items = Object.keys(localStorage),
+        i = items.length;
+
+    while ( i-- ) {
+        values.push( localStorage.getItem(items[i]) );
+    }
+
+    return values;
+
+}
 
 
 // $(document).ready(function() {  
@@ -210,7 +226,8 @@ var cont2=document.getElementById("cont2");
 var cont3=document.getElementById("cont3");
 var cont4=document.getElementById("cont4");
 
-btn5.addEventListener('click',function(){
+
+function changeColor(){
     btn1.style.color = "#000"
     btn2.style.color = "#808080"
     btn3.style.color = "#808080"
@@ -220,51 +237,10 @@ btn5.addEventListener('click',function(){
     cont3.style.display = "none"
     cont4.style.display = "none"
     homePage.innerHTML="";
-    showHome();
-})
 
-btn7.addEventListener('click',function(){
-    btn1.style.color = "#000"
-    btn2.style.color = "#808080"
-    btn3.style.color = "#808080"
-    btn4.style.color = "#808080"
-    cont1.style.display = "flex"
-    cont2.style.display = "none"
-    cont3.style.display = "none"
-    cont4.style.display = "none"
-    homePage.innerHTML="";
-    showHome();
-})
+}
 
-btn6.addEventListener('click',function(){
-    btn1.style.color = "#000"
-    btn2.style.color = "#808080"
-    btn3.style.color = "#808080"
-    btn4.style.color = "#808080"
-    cont1.style.display = "flex"
-    cont2.style.display = "none"
-    cont3.style.display = "none"
-    cont4.style.display = "none"
-    homePage.innerHTML="";
-    showHome();
-})
-
-
-
-btn1.addEventListener('click',function(){
-    btn1.style.color = "#000"
-    btn2.style.color = "#808080"
-    btn3.style.color = "#808080"
-    btn4.style.color = "#808080"
-    cont1.style.display = "flex"
-    cont2.style.display = "none"
-    cont3.style.display = "none"
-    cont4.style.display = "none"
-    homePage.innerHTML="";
-    showHome();
-})
-
-btn2.addEventListener('click',function(){
+function changeColor2(){
     btn1.style.color = "#808080"
     btn2.style.color = "#000"
     btn3.style.color = "#808080"
@@ -273,9 +249,9 @@ btn2.addEventListener('click',function(){
     cont2.style.display = "flex"
     cont3.style.display = "none"
     cont4.style.display = "none"
-})
+}
 
-btn3.addEventListener('click',function(){
+function changeColor3(){
     btn1.style.color = "#808080"
     btn2.style.color = "#808080"
     btn3.style.color = "#000"
@@ -284,8 +260,9 @@ btn3.addEventListener('click',function(){
     cont2.style.display = "none"
     cont3.style.display = "flex"
     cont4.style.display = "none"
-})
-btn4.addEventListener('click',function(){
+}
+
+function changeColor4(){
     btn1.style.color = "#808080"
     btn2.style.color = "#808080"
     btn3.style.color = "#808080"
@@ -294,8 +271,100 @@ btn4.addEventListener('click',function(){
     cont2.style.transform = "none"
     cont3.style.transform = "none"
     cont4.style.transform = "flex"
+}
 
+
+btn5.addEventListener('click',function(){
+    changeColor();
+    showHome();
 })
+
+btn7.addEventListener('click',function(){
+    changeColor();
+    showHome();
+})
+
+btn6.addEventListener('click',function(){
+    changeColor();
+    showHome();
+})
+
+
+
+btn1.addEventListener('click',function(){
+    changeColor();
+    showHome();
+})
+
+btn2.addEventListener('click',function(){
+    changeColor2();
+})
+
+btn3.addEventListener('click',function(){
+    changeColor3();
+})
+
+btn4.addEventListener('click',loadItems);
+
+function loadItems(){
+    changeColor4();
+    let store = allStorage();
+    itemBody.innerHTML="";
+    let total = 0;
+    for(let i=0;i<store.length-1;i++){
+        let itemObj = JSON.parse(store[i]);
+
+        const item = `<tr>
+                <td class="w-25">
+                    <img src="${itemObj.ProductPicUrl}" class="img-fluid img-thumbnail">
+                </td>
+                <td id="${itemObj.productId}">${itemObj.Name}</td>
+                <td>$${itemObj.Price}</td>
+                <td class="qty">${itemObj.inCart}</td>
+                <td>$${itemObj.inCart*itemObj.Price}</td>
+                <td>
+                    <a href="#" id="rmv" class="btn btn-danger btn-sm">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </td>
+            </tr>`
+
+            itemBody.innerHTML += item;
+            let removeBtn = document.getElementById("rmv");
+            removeBtn.addEventListener('click',function(){
+                const productItem = JSON.parse(localStorage.getItem(itemObj.ProductId));
+                let cartNumber = Number(localStorage.getItem('cartNumber'));
+                cartNumber -= productItem.inCart;
+                localStorage.setItem('cartNumber',cartNumber);
+                localStorage.removeItem(itemObj.ProductId);
+                cartNumbers();
+                loadItems();
+
+            })
+
+            function cartNumbers(){
+                let productNumbers = localStorage.getItem('cartNumber');
+                productNumbers = parseInt(productNumbers);
+                if(productNumbers){
+                    localStorage.setItem('cartNumber',productNumbers + 1);
+                    document.getElementById('lblCartCount').innerText = productNumbers + 1;
+            
+                } else {
+                    document.getElementById('lblCartCount').innerText = productNumbers;
+                }
+            }
+
+
+            total+=itemObj.inCart*itemObj.Price;
+            
+            
+    }
+
+    cartTotal.innerText=`$${total}`;
+}
+
+
+
 
 /********************************validate********************/
 function validateForm() {
